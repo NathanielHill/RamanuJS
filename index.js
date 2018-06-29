@@ -20,11 +20,11 @@ module.exports = {
       arr.forEach((el, i) => {
         if(modeMap[el] == null) modeMap[el] = 1
         else
-          modeMap[el]++; 
+          modeMap[el]++
         if(modeMap[el] > maxCount)
         {
           maxEl = el
-          maxCount = modeMap[el];
+          maxCount = modeMap[el]
         }
       })
       return Object.keys(modeMap)
