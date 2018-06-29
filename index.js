@@ -1,5 +1,5 @@
 module.exports = {
-  arithmetic: {
+  stats: {
     mean: (arr) => {
       let sum = 0
       arr.forEach((x) => {
@@ -7,6 +7,7 @@ module.exports = {
       })
       return sum / arr.length
     },
+    weightedMean: require('./src/weightedMean'),
     median: (arr) => {
       arr = arr.sort((a, b) => a - b)
       let i = arr.length / 2
@@ -30,6 +31,7 @@ module.exports = {
       return Object.keys(modeMap)
         .filter( key => modeMap[key] === maxCount)
         .sort((a, b) => b - a).pop()
-    }
+    },
+    quartiles: require('./src/quartiles.js')
   }
 }
