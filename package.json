@@ -1,6 +1,6 @@
 {
   "name": "ramanujs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "author": "Nathaniel Hill <nata@goguna.com>",
   "license": "MIT"
